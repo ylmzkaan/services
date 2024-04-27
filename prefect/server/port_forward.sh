@@ -1,0 +1,1 @@
+kubectl --namespace default port-forward svc/prefect-server 4200:4200 --address=0.0.0.0
