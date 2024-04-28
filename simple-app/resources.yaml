@@ -19,11 +19,10 @@ spec:
         ports:
         - containerPort: 5000
 ---
-# service.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: simple-app-service
+  name: simple-app
 spec:
   selector:
     app: simple-app
