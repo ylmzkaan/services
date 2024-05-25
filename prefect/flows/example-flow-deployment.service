@@ -1,0 +1,12 @@
+[Unit]
+Description=Prefect serve 
+After=minikube.service
+
+[Service]
+User=server1
+WorkingDirectory=/home
+ExecStart=python3 /home/server1/services/prefect/flows/example/serve.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
